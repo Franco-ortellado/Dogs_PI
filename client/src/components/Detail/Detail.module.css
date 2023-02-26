@@ -1,0 +1,74 @@
+/* Detail.module.css */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 500px; /* establecer la altura fija en 500px */
+	padding: 20px;
+	margin-top: 50px;
+	border-radius: 50px;
+	background: linear-gradient(
+		120deg,
+		#246a93 30%,
+		#4499bb 88%,
+		#5da5c5 40%,
+		#3185a5 78%
+	);
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.imageContainer img {
+	width: 400px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/* .img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */
+
+.details-container {
+	flex-basis: 50%;
+}
+
+.container h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.container h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+/* .container img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+} */
+
+.temperaments {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.temperament {
+	background-color: #eee;
+	border-radius: 20px;
+	padding: 5px 15px;
+	margin: 5px;
+	font-size: 1.2rem;
+}
+
+.loading {
+	font-size: 2rem;
+	text-align: center;
+}

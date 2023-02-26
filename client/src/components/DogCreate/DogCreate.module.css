@@ -1,0 +1,141 @@
+.formContainer form {
+	padding: 20px;
+	border-radius: 50px;
+	background: linear-gradient(
+		120deg,
+		#246a93 30%,
+		#4499bb 88%,
+		#5da5c5 40%,
+		#3185a5 78%
+	);
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+	width: 38%;
+	margin: 20px auto;
+}
+
+.formContainer input[type='text'],
+.formContainer textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+
+.formContainer input[type='number'] {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.formContainer input[type='submit'] {
+	background-color: #7e7643;
+	color: rgb(0, 0, 0);
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.formContainer input[type='submit']:hover {
+	background-color: #d7ba65;
+}
+
+.formContainer label {
+	display: block;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+.formContainer input {
+	text-align: center;
+}
+
+.formContainer h1 {
+	margin-top: 5px;
+	color: #fff;
+}
+
+.formContainer h3 {
+	color: #fff;
+}
+
+.formContainer p {
+	color: rgb(244, 38, 38);
+	font-size: small;
+	margin-top: 0px;
+}
+
+.formContainer svg {
+	color: black;
+}
+
+.formImage img {
+	width: 200px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.btn {
+	min-width: 130px;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+	background: #efefef;
+	color: #585858;
+}
+
+.btn:active {
+	box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.titulo_form {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.titulo_form h1 {
+	margin-left: 27%;
+}
+
+.tempsInput {
+	min-width: 130px;
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background: #efefef;
+	color: #585858;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.tempsInput span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tempsInput button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.formContainer {
+	width: 1500px;
+}
