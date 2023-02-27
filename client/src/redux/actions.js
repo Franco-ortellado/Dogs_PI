@@ -12,7 +12,7 @@ export const DOG_CREATE = 'DOG_CREATE';
 
 export let getDog = () => {
 	return async (dispatch) => {
-		return axios.get('http://localhost:3001/dogs').then((response) => {
+		return axios.get('/dogs').then((response) => {
 			dispatch({type: GET_ALL_DOGS, payload: response.data});
 		});
 	};
@@ -20,11 +20,9 @@ export let getDog = () => {
 
 export let getTemperaments = () => {
 	return async (dispatch) => {
-		return axios
-			.get('http://localhost:3001/temperaments')
-			.then((response) => {
-				dispatch({type: GET_ALL_TEMPERAMENTS, payload: response.data});
-			});
+		return axios.get('/temperaments').then((response) => {
+			dispatch({type: GET_ALL_TEMPERAMENTS, payload: response.data});
+		});
 	};
 };
 
@@ -58,22 +56,18 @@ export let orderByWeight = (value) => {
 
 export let searchDog = (name) => {
 	return async (dispatch) => {
-		return axios
-			.get(`http://localhost:3001/dogs?name=${name}`)
-			.then((response) => {
-				dispatch({type: SEARCH_DOG, payload: response.data});
-			});
+		return axios.get(`/dogs?name=${name}`).then((response) => {
+			dispatch({type: SEARCH_DOG, payload: response.data});
+		});
 	};
 };
 
 export let getDogById = (id) => {
 	return async (dispatch) => {
 		try {
-			return axios
-				.get(`http://localhost:3001/dogs/${id}`)
-				.then((response) => {
-					dispatch({type: GET_DOG_BY_ID, payload: response.data});
-				});
+			return axios.get(`/dogs/${id}`).then((response) => {
+				dispatch({type: GET_DOG_BY_ID, payload: response.data});
+			});
 		} catch (error) {
 			console.log(error);
 		}
@@ -82,7 +76,7 @@ export let getDogById = (id) => {
 
 export let postDog = (payload) => {
 	return async () => {
-		let dog = await axios.post('http://localhost:3001/dogs', payload);
+		let dog = await axios.post('/dogs', payload);
 		return dog;
 	};
 };
