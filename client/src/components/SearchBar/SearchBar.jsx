@@ -17,7 +17,7 @@ function SearchBar(props) {
 	};
 
 	const handleInputSubmit = (e) => {
-		props.propaginado(1);
+		props.paginado(1);
 		e.preventDefault();
 		dispatch(searchDog(name));
 	};
