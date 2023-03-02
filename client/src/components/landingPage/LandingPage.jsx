@@ -12,8 +12,6 @@ function LandingPage() {
 			</div>
 			<div className={styles.home}>
 				<img src={Logo} alt="logo" />
-				{/* <h2>SOY HENRY PI</h2>
-				<h1>Dogs</h1> */}
 				<Link to="/home" className={styles.btn}>
 					<button>HOME</button>
 				</Link>

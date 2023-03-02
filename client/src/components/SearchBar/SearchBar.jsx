@@ -7,7 +7,7 @@ import Logo from './img/Logo.png';
 import logoCreate from './img/icoperro.png';
 import plus from './img/icoplus.png';
 
-function SearchBar() {
+function SearchBar(props) {
 	const dispatch = useDispatch();
 	const [name, setName] = useState('');
 
@@ -17,6 +17,7 @@ function SearchBar() {
 	};
 
 	const handleInputSubmit = (e) => {
+		props.propaginado(1);
 		e.preventDefault();
 		dispatch(searchDog(name));
 	};

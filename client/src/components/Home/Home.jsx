@@ -85,6 +85,7 @@ function Home() {
 				hanfleFilterCreated={hanfleFilterCreated}
 				handleOrder={handleOrder}
 				temperaments={temperaments}
+				paginado={paginado}
 			/>
 
 			<Paginado

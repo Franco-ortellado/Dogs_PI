@@ -4,12 +4,11 @@ import SearchBar from '../SearchBar/SearchBar';
 import reload from './img/reload.png';
 import order from './img/order.png';
 import filter from './img/filter.png';
-import {Link} from 'react-router-dom';
 
 function Navbar(props) {
 	return (
 		<nav className={style.navbar}>
-			<SearchBar />
+			<SearchBar paginado={props.paginado} />
 			<hr />
 
 			<div className={style.filters}>
